@@ -1,0 +1,4 @@
+source;share/cygnus_description/local_setup.bash
+source;share/cygnus_description/local_setup.dsv
+source;share/cygnus_description/local_setup.sh
+source;share/cygnus_description/local_setup.zsh

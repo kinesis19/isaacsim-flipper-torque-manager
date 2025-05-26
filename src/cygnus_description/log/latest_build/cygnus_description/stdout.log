@@ -1,0 +1,45 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description
+-- Install configuration: ""
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/meshes
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/meshes/flipper_back_left_1.stl
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/meshes/flipper_front_left_1.stl
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/meshes/flipper_front_right_1.stl
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/meshes/flipper_back_right_1.stl
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/meshes/base_link.stl
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/urdf
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/urdf/cygnus.gazebo
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/urdf/cygnus.trans
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/urdf/cygnus.xacro
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/urdf/materials.xacro
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/ament_index/resource_index/package_run_dependencies/cygnus_description
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/ament_index/resource_index/parent_prefix_path/cygnus_description
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/environment/ament_prefix_path.sh
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/environment/ament_prefix_path.dsv
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/environment/path.sh
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/environment/path.dsv
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/local_setup.bash
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/local_setup.sh
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/local_setup.zsh
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/local_setup.dsv
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/package.dsv
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/ament_index/resource_index/packages/cygnus_description
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/cmake/cygnus_descriptionConfig.cmake
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/cmake/cygnus_descriptionConfig-version.cmake
+-- Installing: /home/kinesis/colcon_ws/src/cygnus_description/install/cygnus_description/share/cygnus_description/package.xml
