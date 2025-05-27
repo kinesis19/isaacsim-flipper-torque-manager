@@ -1,0 +1,60 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    group_flipper_front_left_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    group_flipper_front_right_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    group_flipper_back_left_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    group_flipper_back_right_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+group_flipper_front_left_controller:
+  ros__parameters:
+    joints:
+      - Joint_Flipper_Front_Left
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+group_flipper_front_right_controller:
+  ros__parameters:
+    joints:
+      - Joint_Flipper_Front_Right
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+group_flipper_back_left_controller:
+  ros__parameters:
+    joints:
+      - Joint_Flipper_Back_Left
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+group_flipper_back_right_controller:
+  ros__parameters:
+    joints:
+      - Joint_Flipper_Back_Right
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
