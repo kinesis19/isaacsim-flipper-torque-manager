@@ -1,9 +1,0 @@
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/uninstall.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/cygnus_description_uninstall.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/test.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/edit_cache.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/rebuild_cache.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/list_install_components.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/install.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/install/local.dir
-/home/kinesis/colcon_ws/src/cygnus_description/build/cygnus_description/CMakeFiles/install/strip.dir
