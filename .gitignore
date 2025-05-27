@@ -1,4 +1,4 @@
 .thumbs/
-build/
-install/
-log/
+**/[Bb]build/
+**/[Ii]nstall/
+**/[Ll]og/
