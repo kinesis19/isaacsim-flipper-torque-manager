@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<robot name="orion" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="joint_wheel_front_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_wheel_front_right">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_wheel_front_right_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_wheel_front_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_wheel_front_left">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_wheel_front_left_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_wheel_back_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_wheel_back_right">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_wheel_back_right_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_wheel_back_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_wheel_back_left">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_wheel_back_left_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_flipper_arm_front_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_flipper_arm_front_right">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_flipper_arm_front_right_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_flipper_arm_front_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_flipper_arm_front_left">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_flipper_arm_front_left_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_flipper_arm_back_left_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_flipper_arm_back_left">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_flipper_arm_back_left_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="joint_flipper_arm_back_right_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="joint_flipper_arm_back_right">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="joint_flipper_arm_back_right_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

@@ -1,0 +1,24 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    flipper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+flipper_controller:
+  ros__parameters:
+    joints:
+      - joint_flipper_arm_back_left
+      - joint_flipper_arm_back_right
+      - joint_flipper_arm_front_left
+      - joint_flipper_arm_front_right
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

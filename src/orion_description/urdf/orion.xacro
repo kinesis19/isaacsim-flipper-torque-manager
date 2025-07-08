@@ -1,0 +1,256 @@
+<?xml version="1.0" ?>
+<robot name="orion" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find orion_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find orion_description)/urdf/orion.trans" />
+<xacro:include filename="$(find orion_description)/urdf/orion.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="2.544189114012434e-05 -1.0248795714939028e-06 0.019962113672761496" rpy="0 0 0"/>
+    <mass value="5.02602086717874"/>
+    <inertia ixx="0.00719" iyy="0.011128" izz="0.016995" ixy="0.0" iyz="0.0" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_front_right_1">
+  <inertial>
+    <origin xyz="1.3877787807814457e-17 0.020000000000000007 -3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.585710680353647"/>
+    <inertia ixx="0.000162" iyy="0.000183" izz="0.000162" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075 0.05 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075 0.05 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_front_left_1">
+  <inertial>
+    <origin xyz="0.0 0.02000000000000001 -3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.585710680353647"/>
+    <inertia ixx="0.000162" iyy="0.000183" izz="0.000162" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075 -0.01 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075 -0.01 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_back_right_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 0.020000000000000007 -3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.585710680353647"/>
+    <inertia ixx="0.000162" iyy="0.000183" izz="0.000162" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075 0.05 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_back_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075 0.05 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_back_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_back_left_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 0.02000000000000001 -3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.585710680353647"/>
+    <inertia ixx="0.000162" iyy="0.000183" izz="0.000162" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075 -0.01 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_back_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075 -0.01 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/wheel_back_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="flipper_arm_front_right_1">
+  <inertial>
+    <origin xyz="0.06000000000000001 -0.010000000000000009 3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.9508920186454388"/>
+    <inertia ixx="0.000152" iyy="0.001955" izz="0.001867" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075 0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075 0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="flipper_arm_front_left_1">
+  <inertial>
+    <origin xyz="0.06000000055879355 0.009999999999999995 2.9802322068506193e-10" rpy="0 0 0"/>
+    <mass value="0.9508920116269921"/>
+    <inertia ixx="0.000152" iyy="0.001955" izz="0.001867" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075 -0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075 -0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="flipper_arm_back_left_1">
+  <inertial>
+    <origin xyz="-0.06000000111758706 0.009999999999999995 2.9802329007400097e-10" rpy="0 0 0"/>
+    <mass value="0.9508920186454392"/>
+    <inertia ixx="0.000152" iyy="0.001955" izz="0.001867" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075 -0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_back_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075 -0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_back_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="flipper_arm_back_right_1">
+  <inertial>
+    <origin xyz="-0.059999999999999984 -0.009999999999999995 3.469446951953614e-18" rpy="0 0 0"/>
+    <mass value="0.9508920186454392"/>
+    <inertia ixx="0.000152" iyy="0.001955" izz="0.001867" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075 0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_back_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075 0.065 -0.02" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://orion_description/meshes/flipper_arm_back_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint_wheel_front_right" type="continuous">
+  <origin xyz="0.075 -0.05 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_front_right_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="joint_wheel_front_left" type="continuous">
+  <origin xyz="0.075 0.01 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_front_left_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="joint_wheel_back_right" type="continuous">
+  <origin xyz="-0.075 -0.05 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_back_right_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="joint_wheel_back_left" type="continuous">
+  <origin xyz="-0.075 0.01 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_back_left_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="joint_flipper_arm_front_right" type="revolute">
+  <origin xyz="0.075 -0.065 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="flipper_arm_front_right_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_flipper_arm_front_left" type="revolute">
+  <origin xyz="0.075 0.065 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="flipper_arm_front_left_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_flipper_arm_back_left" type="revolute">
+  <origin xyz="-0.075 0.065 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="flipper_arm_back_left_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="joint_flipper_arm_back_right" type="revolute">
+  <origin xyz="-0.075 -0.065 0.02" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="flipper_arm_back_right_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+</robot>

@@ -1,0 +1,7 @@
+# Default initial positions for orion's ros2_control fake system
+
+initial_positions:
+  joint_flipper_arm_back_left: 0
+  joint_flipper_arm_back_right: 0
+  joint_flipper_arm_front_left: 0
+  joint_flipper_arm_front_right: 0

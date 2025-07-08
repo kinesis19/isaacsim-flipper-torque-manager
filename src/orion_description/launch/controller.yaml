@@ -1,0 +1,39 @@
+orion_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  joint_wheel_front_right_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_wheel_front_right
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_wheel_front_left_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_wheel_front_left
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_wheel_back_right_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_wheel_back_right
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_wheel_back_left_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_wheel_back_left
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_flipper_arm_front_right_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_flipper_arm_front_right
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_flipper_arm_front_left_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_flipper_arm_front_left
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_flipper_arm_back_left_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_flipper_arm_back_left
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint_flipper_arm_back_right_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint_flipper_arm_back_right
+    pid: {p: 100.0, i: 0.01, d: 10.0}

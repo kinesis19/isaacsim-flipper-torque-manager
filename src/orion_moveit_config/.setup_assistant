@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: orion_description
+    relative_path: urdf/orion.urdf
+  srdf:
+    relative_path: config/orion.srdf
+  package_settings:
+    author_name: kinesis
+    author_email: kinesis@kashic.dev
+    generated_timestamp: 1751951817
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
