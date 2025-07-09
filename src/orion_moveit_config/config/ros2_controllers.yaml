@@ -6,9 +6,11 @@ controller_manager:
     flipper_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
+
+    track_velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
 
 flipper_controller:
   ros__parameters:
@@ -22,3 +24,16 @@ flipper_controller:
     state_interfaces:
       - position
       - velocity
+
+# Wheel 관련 추가함:
+track_velocity_controller:
+  ros__parameters:
+  joints:
+    - joint_wheel_front_left
+    - joint_wheel_front_right
+    - joint_wheel_back_left
+    - joint_wheel_back_right
+  command_interfaces:
+    - velocity
+  state_interfaces:
+    - velocity
